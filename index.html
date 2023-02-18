@@ -1,0 +1,785 @@
+
+<!DOCTYPE html>
+<html lang="en pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/darkmode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <link rel="stylesheet" href="/css/covers.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/newsletter.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/shop.css">
+    
+    <title>Clothing Company - Aynthei</title>
+
+</head>
+<body>
+    <header id="navbar" class="navbar">
+        <section id="section-navbar" class="section-navbar w-full box-shadow">
+            <!-- <div id="nav-backdrop" class="nav-backdrop"></div> -->
+            <nav id="nav" class="nav">
+                <div class="nav-inner">
+
+                    <div class="nav-top-container">        
+                        <div class="nav-top-inner flex ">
+
+                            <div class="nav-announcment-bar-container swiper">
+                                <div class="slide-content ">
+                                    <div class="swiper-wrapper">
+
+                                        <div  class="nav-top-swiper swiper-slide">
+                                            <a id="nav-announcment-swiper__1" class="nav-top-announcment" href="https://www.google.com/"> Free Domestic Shipping over $150 and 30 Days Returns</a></div>
+                                       
+                                            <div  class="nav-top-swiper swiper-slide">
+                                            <a id="nav-announcment-swiper__2" class="nav-top-announcment" href="https://www.google.com/"> Check new Arrivals for Mens</a></div>
+                                        
+                                            <div  class="nav-top-swiper swiper-slide">
+                                           <a id="nav-announcment-swiper__3" class="nav-top-announcment" href="https://www.google.com/"> Shop Women's Top Picks</a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <ul id="nav-info-links-container" class="nav-info-links-container flex hidden gap-1">
+                                 <li class="info-links-box">
+                                    <a id="info-nav" class="non-button info-links">Info</a>
+                                 </li>
+                                 <li class="info-links-box">
+                                    <a id="login-nav" class="non-button info-links padding-right-0" href="">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="nav-top-border"></div> -->
+                    </div>
+
+                    <div class="nav-main-container">
+                        <div id="logo" class="logo" alt="Logo">AYNTHEI</div>
+
+                        <ul id="nav-links-wrapper" class="primary-navigation flex-column backdrop-blur-10px bg-rgba-drop h-zero rounded-top border-color-primary border-w-1 max-width margin-0-auto left-50" data-visible="false" >
+                            <div class="nav-categories-wrapper flex-center sticky z-i-20 top-0 left-0 border-color-primary gap-1 padding-inline-1">                               
+                                <button id="language-change" class="language-item-btn font-w-700 " alt="Change Language Here" value="Change Language Here">
+                                    PL
+                                </button>
+                                <!-- <span class="nav-wrapper-border"></span> -->
+                                <div class="navi-btn-wrapper flex-column wh-full">
+                                    <div class="link-container flex wh-full gap-4vw ">
+
+                                        <li id="women-section" class="nav-links-top women-section flex-center nav-links nav-inner-categories relative cursor-pointer transition-all" value="Women's Section" aria-controls="women-links" aria-expanded="false">
+                                            <button class="women-btn border-none flex-center bg-none transition-all">
+                                                <a class="aref text-0_8rem font-w-700" href="#">
+                                                    <p> WOMEN<p>   
+                                                    </a>
+                                                </button>
+                                            </li>
+                                            
+                                            <li id="men-section" class="nav-links-top men-section flex-center nav-links nav-inner-categories relative cursor-pointer transition-all" value="Men's Section" aria-controls="men-links" aria-expanded="false">
+                                                <button class="men-btn border-none flex-center bg-none transition-all">
+                                                    <a class="aref text-0_8rem font-w-700" href="#">
+                                                        <p class="rounded-half"> MEN</p>   
+                                                    </a>
+                                                </button>
+                                            </li>
+                                        </div>
+                                        <div class="border-active-wrapper relative w-full transition-all">
+                                            <span class="nav-wrapper-border absolute transition-all"></span>
+                                        </div>
+                                </div>
+                                <!-- <span class="nav-wrapper-border"></span> -->
+                                <!-- <div class="drop-navi-items" data-visible="false"> -->
+        
+                                    <!-- <li class="nav-items-right"> -->
+        
+                                    <!-- </li> -->
+                                    <!-- <li class="nav-items-right"> -->
+                                        <button id="darkmode-change-icon" class="darkmode-change-icon flex-center cursor-pointer" alt="Dark Mode Changing Button" value="">
+                                            <svg class="dark-mode-icon" id="whitemode-icon" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 36 36">
+                                                
+                                                <path id="Path_50" data-name="Path 50" d="M25.5,18A7.5,7.5,0,1,1,18,10.5,7.5,7.5,0,0,1,25.5,18Z" fill="none" stroke="#none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                <path id="Path_51" data-name="Path 51" d="M18,1.5v3" fill="none" stroke="#none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                <path id="Path_52" data-name="Path 52" d="M18,31.5v3" fill="none" stroke="#none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                <path id="Path_53" data-name="Path 53" d="M6.33,6.33,8.46,8.46" fill="none" stroke="#none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                <path id="Path_54" data-name="Path 54" d="M27.54,27.54l2.13,2.13" fill="none" stroke="#none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                <path id="Path_55" data-name="Path 55" d="M1.5,18h3" fill="none" stroke="#none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                <path id="Path_56" data-name="Path 56" d="M31.5,18h3" fill="none" stroke="#none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                <path id="Path_57" data-name="Path 57" d="M6.33,29.67l2.13-2.13" fill="none" stroke="#none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                <path id="Path_58" data-name="Path 58" d="M27.54,8.46l2.13-2.13" fill="none" stroke="#none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                            </svg>
+                                            
+                                            
+                                        </button>
+                                    <!-- </li> -->
+                                <!-- </div> -->
+                            
+                        </div>
+                        <div class="all-collection flex justify-center w-full h-full till-phone-p-in-10vw  scrollbar-neu overflow-auto padding-block-2 bg-whitemode transition-all">
+                            <div class="women-collection flex transition-all" data-visible="false">
+                                <ul class="women-wrapper grid flex-column wh-full">
+                                    <div class="links-wrapper-box grid grid-container-size-2 gap-2">
+
+                                        <li class="women-links">
+                                            <h2 class="women-link-title text-1rem font-w-600">
+                                                <span>WOMEN</span>
+                                            </h2>
+                                            <ul class="sublink-box flex text-0_8rem color-text-light-grey font-w-600 wh-full">
+                                                <li class="flex   sub-category-links">All Products</li>
+                                                <li class="flex   sub-category-links">Top Picks</li>
+                                                <li class="flex   sub-category-links">Oversize</li>
+                                                <li class="flex   sub-category-links">Best Sellers</li>
+                                                <li class="flex   sub-category-links">SALES</li>
+                                                <li class="flex  sub-category-links">Winter Collection</li>
+                                            </ul>
+                                        </li>
+                                        <li class="women-links">
+                                            <h2 class="women-link-title text-1rem font-w-600">
+                                                <span>WOMEN</span>
+                                            </h2>
+                                            <ul class="sublink-box flex text-0_8rem color-text-light-grey font-w-600 wh-full">
+                                                <li class="flex sub-category-links">All Products</li>
+                                                <li class="flex sub-category-links">Top Picks</li>
+                                                <li class="flex sub-category-links">Oversize</li>
+                                                <li class="flex sub-category-links">Best Sellers</li>
+                                                <li class="flex sub-category-links">SALES</li>
+                                                <li class="flex sub-category-links">Winter Collection</li>
+                                            </ul>
+                                        </li>
+                                        <li class="women-links">
+                                            <h2 class="women-link-title text-1rem font-w-600">
+                                                <span>WOMEN</span>
+                                            </h2>
+                                            <ul class="sublink-box flex text-0_8rem color-text-light-grey font-w-600 wh-full">
+                                                <li class="flex sub-category-links">All Products</li>
+                                                <li class="flex sub-category-links">Top Picks</li>
+                                                <li class="flex sub-category-links">Oversize</li>
+                                                <li class="flex sub-category-links">Best Sellers</li>
+                                                <li class="flex sub-category-links">SALES</li>
+                                                <li class="flex sub-category-links">Winter Collection</li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                    <div class="border-collection"></div>
+                                    
+                                    <div class="links-img-wrapper-box relative cursor-pointer">
+                                        <button class="img-collection-wrapper relative border-none">
+                                            <a href="">
+                                                <img src="https://cdn-img.prettylittlething.com/0/2/0/2/02024b22c0769ee4eb770c0ada464eb356bc213e_cmz7643_1.jpg?imwidth=400" alt="" class="img-collection w-full rounded-half">
+                                                <div class="text-coll-wrapper absolute">
+                                                    <p class="text-collection font-w-700 z-i-1">New Arrivals</p>
+                                                </div>
+                                            </a>
+                                            <!-- <div class="backdrop-collection absolute bottom-0 w-full bg-darkmode backdrop-blur-10px rounded-half"></div> -->
+                                        </button>
+                                    </div>
+
+                                    <div class="border-collection"></div>
+                                    <div class="nav-drawer-footer  pad-top-0 m">
+                                        <div class="nav-drawer-wrapper wh-full">
+                                            <div class="nav-drawer-info-links-container flex-column gap-2">
+                                                <a href="" class="a-nav-link flex items-center transition-all font-w-600 gap-1">
+                                                        <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 21 30">
+                                                            <defs>
+                                                            <style>
+                                                                .cls-1 {
+                                                                fill: #f4f4f4;
+                                                                }
+                                                            </style>
+                                                            </defs>
+                                                            <path id="signin" class="cls-1" d="M18,3A10.512,10.512,0,0,0,7.5,13.5C7.5,21.375,18,33,18,33S28.5,21.375,28.5,13.5A10.512,10.512,0,0,0,18,3Zm0,3a3,3,0,1,1-3,3A3.009,3.009,0,0,1,18,6Zm0,15a7.174,7.174,0,0,1-6-3.225c.03-1.98,4.005-3.075,6-3.075s5.97,1.1,6,3.075A7.174,7.174,0,0,1,18,21Z" transform="translate(-7.5 -3)"/>
+                                                        </svg>                                                        
+                                                    <span>Sign in</span></a>
+                                                <a href="" class="a-nav-link flex items-center transition-all font-w-600 gap-1">
+                                                    <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="29.25" height="29.25" viewBox="0 0 29.25 29.25">
+                                                        <defs>
+                                                          <style>
+                                                            .cls-1 {
+                                                              fill: #f4f4f4;
+                                                            }
+                                                          </style>
+                                                        </defs>
+                                                        <g id="Icon_ionic-ios-help-circle-outline" data-name="Icon ionic-ios-help-circle-outline" transform="translate(-3.375 -3.375)">
+                                                          <path id="Path_71" data-name="Path 71" class="cls-1" d="M18,5.344A12.651,12.651,0,1,1,9.049,9.049,12.573,12.573,0,0,1,18,5.344m0-1.969A14.625,14.625,0,1,0,32.625,18,14.623,14.623,0,0,0,18,3.375Z"/>
+                                                          <path id="Path_72" data-name="Path 72" class="cls-1" d="M18.049,11.25c2.637,0,4.451,1.462,4.451,3.565a3.439,3.439,0,0,1-1.976,3.122c-1.223.71-1.638,1.23-1.638,2.13v.555h-2.44l-.021-.6a2.927,2.927,0,0,1,1.659-3.094c1.188-.71,1.688-1.16,1.688-2.032A1.707,1.707,0,0,0,17.88,13.38,1.779,1.779,0,0,0,16,15.11H13.5C13.549,12.846,15.223,11.25,18.049,11.25ZM16.2,23.3a1.509,1.509,0,1,1,1.5,1.448A1.473,1.473,0,0,1,16.2,23.3Z"/>
+                                                        </g>
+                                                      </svg>
+                                                    <span>Help Center</span></a>
+                                                <a href="" class="a-nav-link flex items-center transition-all font-w-600 gap-1">
+                                                    <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="45" height="36" viewBox="0 0 45 36">
+                                                        <defs>
+                                                          <style>
+                                                            .cls-1 {
+                                                              fill: #f4f4f4;
+                                                            }
+                                                          </style>
+                                                        </defs>
+                                                        <path id="shipping" class="cls-1" d="M43.875,24.75H42.75v-7.6a3.375,3.375,0,0,0-.991-2.384L34.734,7.741a3.375,3.375,0,0,0-2.384-.991h-3.1V3.375A3.376,3.376,0,0,0,25.875,0h-18A3.376,3.376,0,0,0,4.5,3.375V6.75H.563A.564.564,0,0,0,0,7.313V8.438A.564.564,0,0,0,.563,9H19.688a.564.564,0,0,1,.563.563v1.125a.564.564,0,0,1-.562.563H2.813a.564.564,0,0,0-.562.563v1.125a.564.564,0,0,0,.563.563H17.438a.564.564,0,0,1,.563.563v1.125a.564.564,0,0,1-.562.563H.563A.564.564,0,0,0,0,16.313v1.125A.564.564,0,0,0,.563,18H15.188a.564.564,0,0,1,.563.563v1.125a.564.564,0,0,1-.562.563H4.5v9a6.75,6.75,0,0,0,13.5,0h9a6.75,6.75,0,0,0,13.5,0h3.375A1.128,1.128,0,0,0,45,28.125v-2.25A1.128,1.128,0,0,0,43.875,24.75ZM11.25,32.625a3.375,3.375,0,1,1,3.375-3.375A3.376,3.376,0,0,1,11.25,32.625Zm22.5,0a3.375,3.375,0,1,1,3.375-3.375A3.376,3.376,0,0,1,33.75,32.625ZM39.375,18H29.25V10.125h3.1l7.024,7.024Z"/>
+                                                      </svg>
+                                                    <span>Shipping Info</span></a>
+                                                <a href="" class="a-nav-link flex items-center transition-all font-w-600 gap-1">
+                                                    <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="20.25" height="35.999" viewBox="0 0 20.25 35.999">
+                                                        <defs>
+                                                          <style>
+                                                            .cls-1 {
+                                                              fill: #f4f4f4;
+                                                            }
+                                                          </style>
+                                                        </defs>
+                                                        <path id="track" class="cls-1" d="M7.875,22.285V33.3l1.548,2.322a.844.844,0,0,0,1.4,0L12.375,33.3V22.285a11.872,11.872,0,0,1-4.5,0ZM10.125,0A10.125,10.125,0,1,0,20.25,10.125,10.125,10.125,0,0,0,10.125,0Zm0,5.344a4.786,4.786,0,0,0-4.781,4.781.844.844,0,0,1-1.687,0,6.476,6.476,0,0,1,6.469-6.469.844.844,0,0,1,0,1.688Z"/>
+                                                      </svg>                                    
+                                                    <span>Track My Order</span></a>
+                                                <a href="" class="a-nav-link flex items-center transition-all font-w-600 gap-1">
+                                                    <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="37.241" height="30.122" viewBox="0 0 37.241 30.122">
+                                                        <defs>
+                                                          <style>
+                                                            .cls-1 {
+                                                              fill: none;
+                                                              stroke: #f4f4f4;
+                                                              stroke-linecap: round;
+                                                              stroke-linejoin: round;
+                                                              stroke-width: 3px;
+                                                            }
+                                                          </style>
+                                                        </defs>
+                                                        <g id="return" transform="translate(0.62 -2.939)">
+                                                          <path id="Path_76" data-name="Path 76" class="cls-1" d="M34.5,6v9h-9"/>
+                                                          <path id="Path_77" data-name="Path 77" class="cls-1" d="M1.5,30V21h9"/>
+                                                          <path id="Path_78" data-name="Path 78" class="cls-1" d="M5.265,13.5A13.5,13.5,0,0,1,27.54,8.46L34.5,15m-33,6,6.96,6.54A13.5,13.5,0,0,0,30.735,22.5"/>
+                                                        </g>
+                                                      </svg>
+                                                      
+                                                    <span>Returns & Exchange</span></a>
+                                                <a href="" class="a-nav-link flex items-center transition-all font-w-600 gap-1">
+                                                    <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                                                        <defs>
+                                                          <style>
+                                                            .cls-1 {
+                                                              fill: none;
+                                                              stroke: #f4f4f4;
+                                                              stroke-linecap: round;
+                                                              stroke-linejoin: round;
+                                                              stroke-width: 3px;
+                                                            }
+                                                          </style>
+                                                        </defs>
+                                                        <g id="Icon_feather-info" data-name="Icon feather-info" transform="translate(-1.5 -1.5)">
+                                                          <path id="Path_79" data-name="Path 79" class="cls-1" d="M33,18A15,15,0,1,1,18,3,15,15,0,0,1,33,18Z"/>
+                                                          <path id="Path_80" data-name="Path 80" class="cls-1" d="M18,24V18"/>
+                                                          <path id="Path_81" data-name="Path 81" class="cls-1" d="M18,12h0"/>
+                                                        </g>
+                                                      </svg>
+                                                      
+                                                    <span>About Us</span></a>
+                                                </div>
+                                                <div class="border-collection"></div>
+
+                                        </div>
+                                    </div>
+
+                                </ul>
+                            </div>
+                            <div class="men-collection transition-all" data-visible="false">
+                                <ul class="men-wrapper grid flex-column wh-full">
+                                    <div class="links-wrapper-box grid grid-container-size-2 gap-2">
+
+                                        <li class="men-links">
+                                            <h2 class="men-link-title text-1rem font-w-600">
+                                                <span>MEN</span>
+                                            </h2>
+                                            <ul class="sublink-box flex text-0_8rem color-text-light-grey font-w-600 wh-full">
+                                                <li class="flex   sub-category-links">All Products</li>
+                                                <li class="flex   sub-category-links">Top Picks</li>
+                                                <li class="flex   sub-category-links">Oversize</li>
+                                                <li class="flex   sub-category-links">Best Sellers</li>
+                                                <li class="flex   sub-category-links">SALES</li>
+                                                <li class="flex  sub-category-links">Winter Collection</li>
+                                            </ul>
+                                        </li>
+                                        <li class="men-links">
+                                            <h2 class="men-link-title text-1rem font-w-600">
+                                                <span>MEN</span>
+                                            </h2>
+                                            <ul class="sublink-box flex text-0_8rem color-text-light-grey font-w-600 wh-full">
+                                                <li class="flex sub-category-links">All Products</li>
+                                                <li class="flex sub-category-links">Top Picks</li>
+                                                <li class="flex sub-category-links">Oversize</li>
+                                                <li class="flex sub-category-links">Best Sellers</li>
+                                                <li class="flex sub-category-links">SALES</li>
+                                                <li class="flex sub-category-links">Winter Collection</li>
+                                            </ul>
+                                        </li>
+                                        <li class="men-links">
+                                            <h2 class="men-link-title text-1rem font-w-600">
+                                                <span>MEN</span>
+                                            </h2>
+                                            <ul class="sublink-box flex text-0_8rem color-text-light-grey font-w-600 wh-full">
+                                                <li class="flex sub-category-links">All Products</li>
+                                                <li class="flex sub-category-links">Top Picks</li>
+                                                <li class="flex sub-category-links">Oversize</li>
+                                                <li class="flex sub-category-links">Best Sellers</li>
+                                                <li class="flex sub-category-links">SALES</li>
+                                                <li class="flex sub-category-links">Winter Collection</li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                    <div class="border-collection"></div>
+                                    
+                                    <div class="links-img-wrapper-box relative cursor-pointer">
+                                        <button class="img-collection-wrapper relative border-none">
+                                            <a href="">
+                                                <img src="https://cdn.shopify.com/s/files/1/2678/2664/products/dynamic-oversized-t-shirt-orange-sherbet-clothing-ryderwear-689944_1000x1000.jpg?v=1671075565" alt="" class="img-collection w-full rounded-half">
+                                                <div class="text-coll-wrapper absolute">
+                                                    <p class="text-collection font-w-700 z-i-1">New Arrivals</p>
+                                                </div>
+                                            </a>
+                                            <!-- <div class="backdrop-collection absolute bottom-0 w-full bg-darkmode backdrop-blur-10px rounded-half"></div> -->
+                                        </button>
+                                    </div>
+
+                                    <div class="border-collection"></div>
+                                    <div class="nav-drawer-footer  pad-top-0 m">
+                                        <div class="nav-drawer-wrapper wh-full">
+                                            <div class="nav-drawer-info-links-container flex-column gap-2">
+                                                <a href="" class="a-nav-link flex items-center transition-all font-w-600 gap-1">
+                                                        <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 21 30">
+                                                            <defs>
+                                                            <style>
+                                                                .cls-1 {
+                                                                fill: #f4f4f4;
+                                                                }
+                                                            </style>
+                                                            </defs>
+                                                            <path id="signin" class="cls-1" d="M18,3A10.512,10.512,0,0,0,7.5,13.5C7.5,21.375,18,33,18,33S28.5,21.375,28.5,13.5A10.512,10.512,0,0,0,18,3Zm0,3a3,3,0,1,1-3,3A3.009,3.009,0,0,1,18,6Zm0,15a7.174,7.174,0,0,1-6-3.225c.03-1.98,4.005-3.075,6-3.075s5.97,1.1,6,3.075A7.174,7.174,0,0,1,18,21Z" transform="translate(-7.5 -3)"/>
+                                                        </svg>                                                        
+                                                    <span>Sign in</span></a>
+                                                <a href="" class="a-nav-link flex items-center transition-all font-w-600 gap-1">
+                                                    <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="29.25" height="29.25" viewBox="0 0 29.25 29.25">
+                                                        <defs>
+                                                          <style>
+                                                            .cls-1 {
+                                                              fill: #f4f4f4;
+                                                            }
+                                                          </style>
+                                                        </defs>
+                                                        <g id="Icon_ionic-ios-help-circle-outline" data-name="Icon ionic-ios-help-circle-outline" transform="translate(-3.375 -3.375)">
+                                                          <path id="Path_71" data-name="Path 71" class="cls-1" d="M18,5.344A12.651,12.651,0,1,1,9.049,9.049,12.573,12.573,0,0,1,18,5.344m0-1.969A14.625,14.625,0,1,0,32.625,18,14.623,14.623,0,0,0,18,3.375Z"/>
+                                                          <path id="Path_72" data-name="Path 72" class="cls-1" d="M18.049,11.25c2.637,0,4.451,1.462,4.451,3.565a3.439,3.439,0,0,1-1.976,3.122c-1.223.71-1.638,1.23-1.638,2.13v.555h-2.44l-.021-.6a2.927,2.927,0,0,1,1.659-3.094c1.188-.71,1.688-1.16,1.688-2.032A1.707,1.707,0,0,0,17.88,13.38,1.779,1.779,0,0,0,16,15.11H13.5C13.549,12.846,15.223,11.25,18.049,11.25ZM16.2,23.3a1.509,1.509,0,1,1,1.5,1.448A1.473,1.473,0,0,1,16.2,23.3Z"/>
+                                                        </g>
+                                                      </svg>
+                                                    <span>Help Center</span></a>
+                                                <a href="" class="a-nav-link flex items-center transition-all font-w-600 gap-1">
+                                                    <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="45" height="36" viewBox="0 0 45 36">
+                                                        <defs>
+                                                          <style>
+                                                            .cls-1 {
+                                                              fill: #f4f4f4;
+                                                            }
+                                                          </style>
+                                                        </defs>
+                                                        <path id="shipping" class="cls-1" d="M43.875,24.75H42.75v-7.6a3.375,3.375,0,0,0-.991-2.384L34.734,7.741a3.375,3.375,0,0,0-2.384-.991h-3.1V3.375A3.376,3.376,0,0,0,25.875,0h-18A3.376,3.376,0,0,0,4.5,3.375V6.75H.563A.564.564,0,0,0,0,7.313V8.438A.564.564,0,0,0,.563,9H19.688a.564.564,0,0,1,.563.563v1.125a.564.564,0,0,1-.562.563H2.813a.564.564,0,0,0-.562.563v1.125a.564.564,0,0,0,.563.563H17.438a.564.564,0,0,1,.563.563v1.125a.564.564,0,0,1-.562.563H.563A.564.564,0,0,0,0,16.313v1.125A.564.564,0,0,0,.563,18H15.188a.564.564,0,0,1,.563.563v1.125a.564.564,0,0,1-.562.563H4.5v9a6.75,6.75,0,0,0,13.5,0h9a6.75,6.75,0,0,0,13.5,0h3.375A1.128,1.128,0,0,0,45,28.125v-2.25A1.128,1.128,0,0,0,43.875,24.75ZM11.25,32.625a3.375,3.375,0,1,1,3.375-3.375A3.376,3.376,0,0,1,11.25,32.625Zm22.5,0a3.375,3.375,0,1,1,3.375-3.375A3.376,3.376,0,0,1,33.75,32.625ZM39.375,18H29.25V10.125h3.1l7.024,7.024Z"/>
+                                                      </svg>
+                                                    <span>Shipping Info</span></a>
+                                                <a href="" class="a-nav-link flex items-center transition-all font-w-600 gap-1">
+                                                    <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="20.25" height="35.999" viewBox="0 0 20.25 35.999">
+                                                        <defs>
+                                                          <style>
+                                                            .cls-1 {
+                                                              fill: #f4f4f4;
+                                                            }
+                                                          </style>
+                                                        </defs>
+                                                        <path id="track" class="cls-1" d="M7.875,22.285V33.3l1.548,2.322a.844.844,0,0,0,1.4,0L12.375,33.3V22.285a11.872,11.872,0,0,1-4.5,0ZM10.125,0A10.125,10.125,0,1,0,20.25,10.125,10.125,10.125,0,0,0,10.125,0Zm0,5.344a4.786,4.786,0,0,0-4.781,4.781.844.844,0,0,1-1.687,0,6.476,6.476,0,0,1,6.469-6.469.844.844,0,0,1,0,1.688Z"/>
+                                                      </svg>                                    
+                                                    <span>Track My Order</span></a>
+                                                <a href="" class="a-nav-link flex items-center transition-all font-w-600 gap-1">
+                                                    <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="37.241" height="30.122" viewBox="0 0 37.241 30.122">
+                                                        <defs>
+                                                          <style>
+                                                            .cls-1 {
+                                                              fill: none;
+                                                              stroke: #f4f4f4;
+                                                              stroke-linecap: round;
+                                                              stroke-linejoin: round;
+                                                              stroke-width: 3px;
+                                                            }
+                                                          </style>
+                                                        </defs>
+                                                        <g id="return" transform="translate(0.62 -2.939)">
+                                                          <path id="Path_76" data-name="Path 76" class="cls-1" d="M34.5,6v9h-9"/>
+                                                          <path id="Path_77" data-name="Path 77" class="cls-1" d="M1.5,30V21h9"/>
+                                                          <path id="Path_78" data-name="Path 78" class="cls-1" d="M5.265,13.5A13.5,13.5,0,0,1,27.54,8.46L34.5,15m-33,6,6.96,6.54A13.5,13.5,0,0,0,30.735,22.5"/>
+                                                        </g>
+                                                      </svg>
+                                                      
+                                                    <span>Returns & Exchange</span></a>
+                                                <a href="" class="a-nav-link flex items-center transition-all font-w-600 gap-1">
+                                                    <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                                                        <defs>
+                                                          <style>
+                                                            .cls-1 {
+                                                              fill: none;
+                                                              stroke: #f4f4f4;
+                                                              stroke-linecap: round;
+                                                              stroke-linejoin: round;
+                                                              stroke-width: 3px;
+                                                            }
+                                                          </style>
+                                                        </defs>
+                                                        <g id="Icon_feather-info" data-name="Icon feather-info" transform="translate(-1.5 -1.5)">
+                                                          <path id="Path_79" data-name="Path 79" class="cls-1" d="M33,18A15,15,0,1,1,18,3,15,15,0,0,1,33,18Z"/>
+                                                          <path id="Path_80" data-name="Path 80" class="cls-1" d="M18,24V18"/>
+                                                          <path id="Path_81" data-name="Path 81" class="cls-1" d="M18,12h0"/>
+                                                        </g>
+                                                      </svg>
+                                                      
+                                                    <span>About Us</span></a>
+                                                </div>
+
+
+
+
+
+
+
+
+                                                <div class="border-collection"></div>
+
+
+
+
+
+
+                                            
+                                            <!-- <div class="nav-drawer-footer-social flex margin-bottom-4rem justify-between">
+                                                <a href="" class="a-nav-link flex-center transition-all">
+                                                    <svg class="w-h-20px svg-nav-link" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                                                        <defs>
+                                                        <style>
+                                                            .cls-1 {
+                                                            fill: none;
+                                                            stroke: #f4f4f4;
+                                                            stroke-linecap: round;
+                                                            stroke-linejoin: round;
+                                                            stroke-width: 3px;
+                                                            }
+                                                        </style>
+                                                        </defs>
+                                                        <g id="instagram" transform="translate(-1.5 -1.5)">
+                                                        <path id="Path_82" data-name="Path 82" class="cls-1" d="M10.5,3h15A7.5,7.5,0,0,1,33,10.5v15A7.5,7.5,0,0,1,25.5,33h-15A7.5,7.5,0,0,1,3,25.5v-15A7.5,7.5,0,0,1,10.5,3Z"/>
+                                                        <path id="Path_83" data-name="Path 83" class="cls-1" d="M24,17.055A6,6,0,1,1,18.945,12,6,6,0,0,1,24,17.055Z"/>
+                                                        <path id="Path_84" data-name="Path 84" class="cls-1" d="M26.25,9.75h0"/>
+                                                        </g>
+                                                    </svg>                                            
+                                                </a>
+                                                <a href="" class="a-nav-link flex-center transition-all"></a>
+                                                <a href="" class="a-nav-link flex-center transition-all"></a>
+                                                <a href="" class="a-nav-link flex-center transition-all"></a>
+                                                <a href="" class="a-nav-link flex-center transition-all"></a>
+
+                                            </div> -->
+                                        </div>
+                                    </div>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                            <!-- <div class="primary-nav-border"></div> -->
+                            <!-- <li id="accesories-section" class="nav-links nav-inner-categories" value="Accesories Section">ACCESORIES</li> -->
+        
+                        </ul>
+
+                        <ul id="nav-items-wrapper" class="nav-items-wrapper flex-center">
+                            <li class="nav-items cursor-pointer flex-center w-full">
+                                <input id="search-input" class="search-input w-full h-full flex-center non-opacity border-w-1 primary-text transition-all padding-block-04rem padding-left-04rem padding-right-3rem color-ondark font-family-prim rounded-half bg-button-toggle color-text-dark" type="text" data-visible="false">
+                                <button id="nav-quick-search-item-btn" class="nav-quick-search-item-btn flex-center" alt="Search Area" value="Search" aria-controls="search-input" aria-expanded="false"">
+                                    <svg class="search-item-link" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 27 27.007">
+                                        <path id="Icon_ionic-ios-search" class="search-icon" data-name="Icon ionic-ios-search" d="M31.184,29.545l-7.509-7.58a10.7,10.7,0,1,0-1.624,1.645l7.46,7.53a1.156,1.156,0,0,0,1.631.042A1.163,1.163,0,0,0,31.184,29.545ZM15.265,23.7a8.45,8.45,0,1,1,5.977-2.475A8.4,8.4,0,0,1,15.265,23.7Z" transform="translate(-4.5 -4.493)" fill="#fff"/>
+                                      </svg>
+                                      
+                                      
+                                </button>
+                                <button id="exit-search" class="exit-search-btn non-opacity absolute cursor-pointer rounded-full till-phone-p-04rem flex-center" value="clear" onclick="clearInput()">
+                            
+                                        <svg class="exit-icon flex-center" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 21 21">
+                                            <path class="path-exit-icon" id="Icon_material-clear" data-name="Icon material-clear" d="M28.5,9.615,26.385,7.5,18,15.885,9.615,7.5,7.5,9.615,15.885,18,7.5,26.385,9.615,28.5,18,20.115,26.385,28.5,28.5,26.385,20.115,18Z" transform="translate(-7.5 -7.5)" fill="#fff"/>
+                                          </svg>
+                                      
+                                      
+                                </button>
+                            </li>
+                            <li class="nav-items cursor-pointer">
+                                <button id="shop-item-btn" class="shop-item-btn cursor-pointer" value="Shopping Bag" alt="Shopping Bag" aria-controls="shopping-container" aria-expanded="false">
+                                    <!-- <svg class="shop-item-link" xmlns="http://www.w3.org/2000/svg" width="100%" height="18px" viewBox="0 0 30 37.5">
+                                        <g id="shopdarkmode-icon" transform="translate(-119.5 -165)">
+                                          <g id="Icon_feather-shopping-bag" data-name="Icon feather-shopping-bag" transform="translate(116.5 168)">
+                                            <path id="Path_48" data-name="Path 48" d="M9,3,4.5,9V30a3,3,0,0,0,3,3h21a3,3,0,0,0,3-3V9L27,3Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                            <path id="Path_49" data-name="Path 49" d="M4.5,9h27" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                          </g>
+                                          <g id="Group_91" data-name="Group 91" transform="translate(-2.5 1.557)">
+                                            <line id="Line_7" data-name="Line 7" y2="3" transform="translate(142.883 164.943)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+                                            <line id="Line_8" data-name="Line 8" x2="12.383" transform="translate(130.5 164.943)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+                                            <line id="Line_6" data-name="Line 6" y2="3" transform="translate(130.5 164.943)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+                                          </g>
+                                        </g>
+                                      </svg> -->
+                                      <img src="/icons/shop.svg" alt="" class="shop-item-link">
+
+                                      <span id="count" class="shop-number-item-span pre-nav-cart-amount">0</span>
+                                </button>
+
+                                <div id="shopping-box" class="shopping-container flex-column backdrop-blur-10px bg-rgba-drop h-zero rounded-top max-width margin-0-auto left-50 margin-bottom-4rem" data-visible="false">
+                                    <!-- <div id="root"></div> -->
+                                    <div class="sidebar margin-bottom-4rem flex-center sticky z-i-20 top-0 left-0 gap-1">
+                                        <div class="head rounded-half border-w-1 border-color-primary"><p class="head-text color-text-white">My Cart</p></div>
+                                        <div id="cartItem" class="cart-item-box">Your cart is empty</div>
+                                        <div class="foot z-i-1 sticky transition-all padding-block-2 wh-full backdrop-blur-10px flex-column gap-1 pad-2rem bottom-0 flex items-center border-w-1 border-color-primary">
+                                            <div class="total-wrapper flex items-center justify-self-start wh-full">
+                                                <h3 class="foot-text">Total</h3>
+                                                <h2 id="total">$ 0.00</h2>
+                                            </div>
+                                            <div class="basket-links w-full flex-column items-center justify-center gap-1 transition-all">
+                                                <button class="basket-buttons free-shipping flex-center w-full rounded-half font-w-600 transition-all">Free Shipping</button>
+                                                <button class="basket-buttons checkout-btn uppercase flex-center w-full border-w-1 border-none rounded-half font-w-700 transition-all">Checkout</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hamburger-wrapper nav-items mobile-nav-toggle">
+                                <button class=" hamburger-icon" aria-controls="primary-navigation" aria-expanded="false">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </li>    
+                        </ul>
+
+                    </div>
+                    <!-- <span class="nav-wrapper-border"></span> -->
+                </div>
+
+                <div id="nav-drawe-backdrop" class="nav-backdrop w-full fixed bottom-0 left-0 backdrop-blur-1px bg-rgba-drop cursor-pointer z-i-10"></div>
+            </nav>
+        </section>
+    </header>
+    <section id="hero-section" class="hero-section swiper max-width margin-0-auto w-full">
+        <div class="hero-container slide-content-hero gap-1 flex-column w-full">
+            <div class="swiper-wrapper h-full w-full">
+
+                <div class="hero-content-wrapper swiper-slide relative  box-shadow-big rounded-half" width="100%" height="100%">
+                    <img class="hero-img w-full h-full" src="https://cdn.shopify.com/s/files/1/1693/6097/files/GY77468_C66-018_AUS_Web_Banner_Mobile_900x1500px_Arrival_1_750x.jpg?v=1674720221" alt="">
+                    <!-- <video width="100%" height="100%" type="video/mp4" class="hero-img object-cover"playsinline loop autoplay muted src="/video/video_1.mp4"></video> -->
+                    <div class="hero-text-wrapper w-full flex-column-start padding-left-2rem pad-1rem absolute color-text">
+                        <h1 class="hero-title w-full big-text white-space">NEW APPAREL FOR MEN</h1>
+                        <p class="margin-t-b w-full primary-text white-space">Look Good and Feel Strong</p>
+                        <button class="hero-button button-size-color-mobile rounded-full border-w-1 border-color-primary uppercase cursor-pointer box-shadow">SHOP NOW</button>
+                    </div>
+                </div>
+                <div class="hero-content-wrapper swiper-slide relative  box-shadow-big rounded-half" width="100%" height="100%">
+                    <img class="hero-img w-full h-full" src="https://images.squarespace-cdn.com/content/v1/547a3834e4b053a861c4874e/1634732359855-D8H1GBHE2RAUVD3M0983/Sustainably+Chic+%7C+Sustainable+Fashion+Blog+%7C+The+Best+Sustainable+Activewear+Brands.jpg?format=1000w" alt="">
+                    <!-- <video width="100%" height="100%" type="video/mp4" class="hero-img  object-cover"playsinline loop autoplay muted src="/video/video_2.mp4"></video> -->
+                    <div class="hero-text-wrapper w-full flex-column-start padding-left-2rem mx-auto pad-1rem absolute color-text">
+                        <h1 class="hero-title w-full big-text white-space">OUTDOOR WORKOUT</h1>
+                        <p class="margin-t-b w-full primary-text white-space">Look Gorgeous and Feel the power</p>
+                        <button class="hero-button button-size-color-mobile rounded-full border-w-1 border-color-primary uppercase cursor-pointer box-shadow">SHOP NOW</button>
+                    </div>
+                </div>
+                <div class="hero-content-wrapper swiper-slide relative  box-shadow-big rounded-half" width="100%" height="100%">
+                    <img class="hero-img w-full h-full" src="https://i.pinimg.com/originals/b5/bf/ac/b5bfac4ceae0b171e7b9dff7a71786b5.jpg" alt="">
+                    <!-- <video width="100%" height="100%" type="video/mp4" class="hero-img  object-cover"playsinline loop autoplay muted src="/video/video_2.mp4"></video> -->
+                    <div class="hero-text-wrapper w-full flex-column-start padding-left-2rem mx-auto pad-1rem absolute color-text">
+                        <h1 class="hero-title w-full big-text white-space">CASUAL LOOK FOR MEN</h1>
+                        <p class="margin-t-b w-full primary-text white-space">Look Stylish and Feel Confident</p>
+                        <button class="hero-button button-size-color-mobile rounded-full border-w-1 border-color-primary uppercase cursor-pointer box-shadow">SHOP NOW</button>
+                    </div>
+                </div>
+                <div class="hero-content-wrapper swiper-slide relative   box-shadow-big rounded-half" width="100%" height="100%">
+                    <img class="hero-img w-full h-full" src="https://www.thegoodtrade.com/wp-content/uploads/2023/01/sustainable-athletic-wear.jpg" alt="">
+                    <!-- <video width="100%" height="100%" type="video/mp4" class="hero-img object-cover"playsinline loop autoplay muted src="/video/video_3.mp4"></video> -->
+                    <div class="hero-text-wrapper w-full flex-column-start padding-left-2rem mx-auto pad-1rem absolute color-text">
+                        <h1 class="hero-title w-full big-text white-space">NEW YEAR NEW AMPLIFY</h1>
+                        <p class="margin-t-b w-full primary-text white-space">Often imitated, never duplicated</p>
+                        <button class="hero-button button-size-color-mobile rounded-full border-w-1 border-color-primary uppercase cursor-pointer box-shadow">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+        </img>
+        </div>
+    </section>
+
+
+    <section id="shop-section" class="shop-section-content max-width margin-0-auto w-full">
+        <div class="shop-container  max-width">
+            <div class="shop-wrapper padding-block-2">
+                <div class="products-header padding-left-2rem gap-1vw flex-column-start color-text-dark">
+                    <div class="flex">
+                        <div class="flex-column-start w-full">
+                            <p class="text-1rem font-w-500">Shop</p>
+                            <p class="text-1_5rem font-w-700 uppercase">Trending</p>
+                        </div>
+                    </div>
+                    <div class="products-toggle rounded-full border-w-2 box-shadow border-color-primary bg-whitemode">
+                        <div class="buttons-toggle flex w-full relative margin-button-toggle">
+                            <div id="background-toggle" class="transition-all bg-button-toggle absolute h-full width-button-toggle rounded-full "></div>
+                            <!-- <button id="women-shop-btn" class="button-toggle border-none cursor-pointer z-i-10 font-w-600 color-text-bg">Women's</button>
+                            <button id="men-shop-btn" class="button-toggle border-none cursor-pointer z-i-10 font-w-600 color-text-bg">Men's</button> -->
+                        </div>
+                    </div>
+
+                </div>
+ 
+             <div class="products-wrapper swiper margin-top-0_8 padding-inline-2 flex-shrink transition-all">
+                    <div class="slide-content-shop gap-1 w-full flex flex-shrink">
+                        <div id="product-swiper-wrapper" class="swiper-wrapper wh-full flex transition-all">
+
+
+                            
+
+
+                            
+                    <p class="empty-state color-text-dark margin-2-auto ">Product not found...</p>
+                        </div>
+                    </div>        
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="products-cover-container max-width margin-0-auto w-full">
+        <div class="covers-wrapper grid till-phone-p-5vw">
+            <div class="covers covers-women wh-full relative">
+                <div class="bg-linear w-full absolute bottom-0 left-50"></div>
+                <div class="covers-links-box absolute left_2rem flex-column justify-center items-flex-start z-i-1">
+
+                    <h3 class="font-w-700 text-1_5rem">Shop for Her</h3>
+                    <p class="font-w-500 text-0_8rem">Explore More, Sufrace, Pulse & more</p>
+                    <div class="covers-links-wrapper flex-column items-flex-start">
+                        <a href="" class="covers-links rounded-full padding-inline-1 padding-block-04rem  font-w-700 cursor-pointer">
+                            <span clas>Shop Brass</span>
+                        </a>
+                        <a href="" class="covers-links rounded-full padding-inline-1 padding-block-04rem  font-w-700 cursor-pointer">
+                            <span>Shop Bottoms</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="covers covers-men wh-full relative">
+                <div class="bg-linear w-full absolute bottom-0 left-50"></div>
+                <div class="covers-links-box absolute right_2rem flex-column justify-center items-end z-i-1">
+                    <h3 class="font-w-700 text-1_5rem">Shop for Him</h3>
+                    <p class="font-w-500 text-0_8rem">Explore Pump Covers, Shorts & more</p>
+                    <div class="covers-links-wrapper flex-column items-end ">
+                        <a href="" class="covers-links rounded-full padding-inline-1 padding-block-04rem  font-w-700 cursor-pointer">
+                            <span clas>Shop Shirts</span>
+                        </a>
+                        <a href="" class="covers-links rounded-full padding-inline-1 padding-block-04rem  font-w-700 cursor-pointer">
+                            <span>Shop Bottoms</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="newsletter-container max-width margin-0-auto w-full">
+        <div class="newsletter-wrapper till-phone-p-5vw flex-center flex-column gap-2">
+            <div class="newsletter-top flex-column gap-1 flex-center w-full">
+                <h3 class="newsletter-title text-1_2rem uppercase font-w-700 color-text-dark">Sign up for Aynthei newsletter</h3>
+                <form action="" method="post" class="flex-column gap-1 flex-center w-full">
+
+                    <input id="newsletter-email" type="email" name="contact[email]" placeholder="Your Email Adress" required class="newsletter-input till-phone-p-in-5vw text-1rem rounded-half border-w-1 box-shadow-big color-text-dark w-full">
+                    <button id="newsletter-submit-btn" type="submit" class="newsletter-submit flex-center padding-block-04rem text-1rem rounded-half box-shadow-big font-w-700 w-full border-none uppercase">SIGN UP</button>
+                </form>
+            </div>
+            <div class="newsletter-bottom w-full">
+                <div class="newsletter-social-links flex items-center justify-evenly w-full">
+                    <a href="" class="flex-center text-deco-none w-h-30px transition-all">
+                        <img src="/icons/social-media/instagramdark.svg" alt="" class="insta w-h-20px">                          
+                    </a>
+                    <a href="" class="flex-center text-deco-none w-h-30px transition-all">
+                        <img src="/icons/social-media/tiktokdark.svg" alt="" class="tiktok w-h-20px">
+                    </a>
+                    <a href="" class="flex-center text-deco-none w-h-30px transition-all">
+                        <img src="/icons/social-media/twitterdark.svg" alt="" class=" twitt w-h-20px">
+                    </a>
+                    <a href="" class="flex-center text-deco-none w-h-30px transition-all">
+                        <img src="/icons/social-media/youtubedark.svg" alt="" class=" ytb w-h-20px">
+                    </a>
+                    <a href="" class="flex-center text-deco-none w-h-30px transition-all">
+                        <img src="/icons/social-media/facebookdark.svg" alt="" class="fb w-h-20px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-info-container max-width mx-auto margin-bottom-4rem margin-top-2 w-full">
+        <div class="footer-info-wrapper till-phone-p-5vw grid gap-2 rounded-half">
+            <div class="footer-support flex-column gap-1 till-phone-p-5vw rounded-half">
+                <h3 class="margin-bottom-1rem color-text-grey uppercase font-w-600 text-1rem">support</h3>
+                <a href="" class="flex text-deco-none items-center">
+                    <img src="/icons/helpdark.svg" alt="" class="help w-h-20px">
+                    <p class="padding-left-1rem color-text-dark font-w-500 text-0_8rem">Help Center</p>
+                </a>
+                <a href="" class="flex text-deco-none items-center">
+                    <img src="/icons/infodark.svg" alt="" class="info w-h-20px">
+                    <p class="padding-left-1rem color-text-dark font-w-500 text-0_8rem">Contact Us</p>
+                </a>
+                <a href="" class="flex text-deco-none items-center">
+                    <img src="/icons/shippingdark.svg" alt="" class="shipping w-h-20px">
+                    <p class="padding-left-1rem color-text-dark font-w-500 text-0_8rem">Shipping Info</p>
+                </a>
+                <a href="" class="flex text-deco-none items-center">
+                    <img src="/icons/trackdark.svg" alt="" class="track w-h-20px">
+                    <p class="padding-left-1rem color-text-dark font-w-500 text-0_8rem">Track My Order</p>
+                </a>
+                <a href="" class="flex text-deco-none items-center">
+                    <img src="/icons/returndark.svg" alt="" class="return w-h-20px">
+                    <p class="padding-left-1rem color-text-dark font-w-500 text-0_8rem">Returns & Exchanges</p>
+                </a>
+
+            </div>
+            <div class="support-info flex-column gap-1 till-phone-p-5vw rounded-half">
+                <h3 class="margin-bottom-1rem color-text-grey uppercase font-w-600 text-1rem">info</h3>
+                <a href="" class="flex text-deco-none items-center">
+                    <img src="/icons/infodark.svg" alt="" class="about w-h-20px">
+                    <p class="padding-left-1rem color-text-dark font-w-500 text-0_8rem">About Us</p>
+                </a>
+                <a href="" class="flex text-deco-none items-center">
+                    <img src="/icons/ourshopsdark.svg" alt="" class="ourshop w-h-20px">
+                    <p class="padding-left-1rem color-text-dark font-w-500 text-0_8rem">Our Shops</p>
+                </a>
+                <a href="" class="flex text-deco-none items-center">
+                    <img src="/icons/signindark.svg" alt="" class="signin w-h-20px">
+                    <p class="padding-left-1rem color-text-dark font-w-500 text-0_8rem">Carrers</p>
+                </a>
+            </div>
+        </div>
+        <div class="footer-info flex-center flex-column gap-1 margin-top-2">
+            <span class="font-w-500 text-0_7rem color-text-dark">© 2023 | Aynthei | All Rights Reserved</span>
+            <div class="footer-legal-links-wrapper flex-center gap-1">
+                <a href="" class="legal-links uppercase color-text-grey text-deco-none font-w-500 text-0_7rem">privacy policy</a>
+                <small>|</small>
+                <a href="" class="legal-links uppercase color-text-grey text-deco-none font-w-500 text-0_7rem">terms of service</a>
+                <small>|</small>
+                <a href="" class="legal-links uppercase color-text-grey text-deco-none font-w-500 text-0_7rem">ccpa</a>
+            </div>
+        </div>
+    </footer>
+    <!-- <script  src="/js/shop-women.js"></script> -->
+    <script  src="/js/shop-all.js"></script>
+    <script  src="/js/swiper-bundle.min.js"></script>
+    <script  src="/js/lang.js"></script>
+    <script  src="/js/search.js"></script>
+    <script  src="/js/swiper.js"></script>
+    <!-- <script  src="/js/shop.js"></script> -->
+    <script  src="/js/darkmode.js"></script>
+    <script  src="/js/main.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> -->
+</body>
+</html>

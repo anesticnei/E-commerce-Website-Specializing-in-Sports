@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="33" viewBox="0 0 30 33">
+  <g id="ourshops" transform="translate(-880.5 -552.5)">
+    <path id="track" d="M4.413,12.488v6.174l.868,1.3a.473.473,0,0,0,.787,0l.867-1.3V12.488a6.653,6.653,0,0,1-2.522,0ZM5.674,0a5.674,5.674,0,1,0,5.674,5.674A5.674,5.674,0,0,0,5.674,0Zm0,2.994A2.682,2.682,0,0,0,2.994,5.674a.473.473,0,0,1-.946,0A3.629,3.629,0,0,1,5.674,2.049a.473.473,0,0,1,0,.946Z" transform="translate(889.826 560.063)" fill="#1a1a1a"/>
+    <g id="Icon_feather-home" data-name="Icon feather-home" transform="translate(877.5 551)">
+      <path id="Path_87" data-name="Path 87" d="M4.5,13.5,18,3,31.5,13.5V30a3,3,0,0,1-3,3H7.5a3,3,0,0,1-3-3Z" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

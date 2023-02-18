@@ -1,0 +1,35 @@
+.newsletter-top{
+    /* border-top: 1px solid #48E573; */
+    /* border-top: 0.5px solid #6D37FF; */
+    /* padding-top: 2rem; */
+    border-bottom: 1px solid #696969;
+    padding-bottom: 2rem;
+}
+/* .newsletter-bottom{
+    border-bottom: 0.5px solid #6D37FF;
+    padding-bottom: 2rem;
+} */
+.newsletter-title{
+    /* white-space: pre-wrap; */
+    width: 80%;
+    text-align: center;
+}
+.newsletter-input{
+    background: none;
+    margin-top: 1rem;
+}
+.newsletter-submit{
+    background-color: #48E573;
+    color: #1A1A1A;
+}
+.newsletter-input{
+    height: 2.4rem;
+}
+
+
+
+@media (min-width: 1000px){
+.newsletter-wrapper{
+    padding-inline: 10vw;
+}
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="37.5" viewBox="0 0 30 37.5">
+  <g id="shop" transform="translate(-119.5 -165)">
+    <g id="Icon_feather-shopping-bag" data-name="Icon feather-shopping-bag" transform="translate(116.5 168)">
+      <path id="Path_48" data-name="Path 48" d="M9,3,4.5,9V30a3,3,0,0,0,3,3h21a3,3,0,0,0,3-3V9L27,3Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_49" data-name="Path 49" d="M4.5,9h27" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <g id="Group_91" data-name="Group 91" transform="translate(-2.5 1.557)">
+      <line id="Line_7" data-name="Line 7" y2="3" transform="translate(142.883 164.943)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_8" data-name="Line 8" x2="12.383" transform="translate(130.5 164.943)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_6" data-name="Line 6" y2="3" transform="translate(130.5 164.943)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
