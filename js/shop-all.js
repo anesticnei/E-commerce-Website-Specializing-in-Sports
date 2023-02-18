@@ -20,7 +20,6 @@ const shopAll = [
         colors_number: 4,
         price: 38.97,
         picture: "https://cdn.shopify.com/s/files/1/2156/4663/products/Black-1-18_712x894.jpg?v=1619440922",
-        // add_button: ,
 
     },
     {
@@ -33,8 +32,6 @@ const shopAll = [
         colors_number: 4,
         price: 64.99,
         picture: "https://blog.prettylittlething.com/wp-content/uploads/2021/01/Weight-Training-700x1116.png",
-        // add_button: ,
-
     },
     {
         id: 3,
@@ -46,8 +43,6 @@ const shopAll = [
         colors_number: 2,
         price: 39.99,
         picture: "https://media.missguided.com/i/missguided/B1503750_01?fmt=jpeg&fmt.jpeg.interlaced=true&$product-page__main--2x$",
-        // add_button: ,
-
     },
     {
         id: 4,
@@ -269,81 +264,26 @@ const shopAll = [
     },
 ]
 
-// console.log(shopAll);
-// const currentProducts = shopAll;
-// let women = shopWomen;
-
-// const womenShopBtn = document.querySelector('#women-shop-btn');
-// const menShopBtn = document.querySelector('#men-shop-btn');
 const productWrapper = document.getElementById('product-swiper-wrapper');
 const backgroundToggle = document.querySelector('#background-toggle');
 const footContainer = document.querySelector('.foot');
 const freeShipping = document.querySelector('.free-shipping');
 const shoppingBox = document.querySelector('.shopping-container');
-
-// const showAllProducts = shopAll.map((items)=>{
-//     return `<div class="shoes-box swiper-slide item-product flex justify-start flex-shrink">
-//     <div class="product-cart flex-column wh-full">
-//     <a href="" class="product-link wh-full block"> </a>
-//             <div class="top-container relative rounded-half box-shadow-big-rounded clipped aspect-ratio-3_4">
-//                 <div class="product-images-container wh-full absolute-tl clipped">
-//                     <div class="product-images-wrapper wh-full">
-//                         <div class="product-image-slide absolute-tl wh-full transition-all duration-200 mouseable: block product-image-slide-0">
-//                             <img class="wh-full" src="${items.picture}" alt=""></img>
-//                         </div>  
-//                     </div>
-//                 </div>
-                                
-//                         <div class='add-to-cart-btn add-product-box absolute bottom-0 right-0 pad-1rem z-i-1 cursor-pointer'>
-//                                     <button class = 'add-to-cart-btn add-product-button till-phone-p-04rem rounded-full border-none w-2rem h-2rem bg-dark cursor-pointer'><svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 31.5 31.5'><path id='Icon_awesome-plus' data-name='Icon awesome-plus' d='M29.25,14.625H19.125V4.5a2.25,2.25,0,0,0-2.25-2.25h-2.25a2.25,2.25,0,0,0-2.25,2.25V14.625H2.25A2.25,2.25,0,0,0,0,16.875v2.25a2.25,2.25,0,0,0,2.25,2.25H12.375V31.5a2.25,2.25,0,0,0,2.25,2.25h2.25a2.25,2.25,0,0,0,2.25-2.25V21.375H29.25a2.25,2.25,0,0,0,2.25-2.25v-2.25A2.25,2.25,0,0,0,29.25,14.625Z' transform='translate(0 -2.25)' fill='#fff'/></svg></button>
-//                         </div>
-//             </div>
-//             <div class="bottom-container relative transition-all min-h-7_5rem z-i-10 margin-t-b">
-//                 <div class="product-info wh-full">
-//                         <div class="flex items-center flex-wrap color-text-dark font-w-600 text-1rem">${items.product_info_title}</div>
-//                             <div class="flex items-center flex-wrap  text-0_7rem gap-1vw">
-//                                 <span class="color-text-grey">${items.color}</span>
-//                                 <span class="bg-grey rounded-full padding-inline-0_4 color-text-white">${items.colors_number} Colors</span>
-//                             </div>
-//                         <h2 class="flex items-center flex-wrap color-text-grey font-w-600 text-0_7rem"> $ ${items.price}</h2>
-//                 </div>
-//                 </div>
-//     </div>
-// </div>`        
-// });
-
-// productWrapper.innerHTML = showAllProducts;
-
-
 let currentProducts = shopAll;
 let categories = new Set();
 const basket = (JSON.parse(localStorage.getItem('Basket'))) || [];
 let addToBasketButtons;
 
-
-
-  
 const addToBasket = (e) =>{
-
-
-
     const selectedtId = parseInt(e.target.dataset.id);
-    const key = currentProducts.findIndex((product) =>
-        product.id === selectedtId);
-    
-    basket.push(currentProducts.at(key));
-    
+    const key = currentProducts.findIndex((product) => product.id === selectedtId);    
+    basket.push(currentProducts.at(key));    
     const basketTotal = basket.reduce((sum, product) =>{
         return sum += product.price
     }, 0);
     
     const basketSpan = document.querySelector('#count');
-    basketSpan.innerHTML = basket.length;
-    // console.log(basketTotal);
-    
-    // const total = document.getElementById('total');
-    // total.innerHTML = "$ " + `${basketTotal}`;
-    
+    basketSpan.innerHTML = basket.length;  
     localStorage.setItem('Basket', JSON.stringify(basket));
   }
 
@@ -359,7 +299,6 @@ function displaycart(a){
     if(basket.length==0){
         document.getElementById('cartItem').innerHTML = "Your cart is empty";
         document.getElementById('total');
-        // basketLinks.style.display = "none";
         footContainer.style.display = "none";
         shoppingBox.style.maxHeight = "30vh"
         
@@ -368,8 +307,6 @@ function displaycart(a){
         }, 0);
         const total = document.getElementById('total');
         total.innerHTML = "$ " +  `${basketTotal}`;
-        // const sideBar = document.getElementById('shopping-box');
-        // sideBar.style.display = "none";
         localStorage.setItem('Basket', JSON.stringify(basket));
     }
     else {
@@ -377,7 +314,6 @@ function displaycart(a){
             let {picture, product_info_title, price} = items;
             footContainer.style.display = "flex";
             shoppingBox.style.maxHeight = "80vh"
-            // total = total + (price * quality);
             total = total + price;
             
             if(total >=150){
@@ -395,11 +331,6 @@ function displaycart(a){
 
             localStorage.setItem('Basket', JSON.stringify(basket));
             document.getElementById('total').innerHTML = "$ " + total.toFixed(2);
-
-
-            // let quantityElement = document.querySelector('.cart-quality-input')[0];
-            // let quality = quantityElement.value;
-            // updateCartTotal();
             return(
                 `<div class = 'cart-item relative flex-column gap-1 rounded-half'>
                     <div class="product-wrapper-basket flex justify-between w-full">
@@ -465,22 +396,16 @@ const renderProducts = (items) =>{
     if (darkMode == 'enabled'){
         let textColor = document.querySelectorAll('.color-text-dark');
         for(let txtClr of textColor){
-            // txtClr.classList.add('changecolor');
             txtClr.style.color = "#F4F4F4"
         }
     }else{
         let textColor = document.querySelectorAll('.color-text-dark');
         for(let txtClr of textColor){
-            // txtClr.classList.remove('changecolor');
             txtClr.style.color = "#1A1A1A"
         }
     }
 
 };
-
-
-
-
 
 const renderCategories = (items) => {
     for(let i = 0; i < items.length; i++){
@@ -510,7 +435,6 @@ const renderCategories = (items) => {
     }else{
         let textColor = document.querySelectorAll('.color-text-dark');
         for(let txtClr of textColor){
-            // txtClr.classList.remove('changecolor');
             txtClr.style.color = "#1A1A1A"
         }
     }
@@ -537,18 +461,12 @@ categoriesButton.forEach((btn) =>{
                 backgroundToggle.style.width = "85px";
                 backgroundToggle.style.transform = "translate(0px, 0px)";
                 productWrapper.style.transform = "translate3d(0px, 0px, 0px)";
-                // addToBasket(currentProducts);
         }else{
             currentProducts = currentProducts.filter((product) => product.category === category);
                 backgroundToggle.style.width = "62px";
                 backgroundToggle.style.transform = "translate(86px, 0px)";
                 productWrapper.style.transform = "translate3d(0px, 0px, 0px)";
-                // addToBasket(currentProducts);
         }
-
-
-        // const selectedCategory = shopAll.filter((product) => product.category === category)
-        // });
         renderProducts(currentProducts);
         
     })
@@ -565,34 +483,13 @@ searchBarInput.addEventListener("input", (e)=>{
         if(product.product_info_title.toLowerCase().includes(search.toLowerCase())){
             return product
         }
-    })
-
-    const emptyState = document.querySelectorAll('.empty-state');
-
-    // foundProducts.length === 0
-    //   ? emptyState.style.display = "block"
-    //   : emptyState.style.display = "none";
-
-  
+    });
+    const emptyState = document.querySelectorAll('.empty-state');  
     renderProducts(foundProducts);
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
   const shopIconBtn = document.querySelector('#shop-item-btn')
-
   shopIconBtn.addEventListener("click", ()=>{
-    // console.log("siemka");
     const basketBox = document.getElementById('shopping-box');
     const visability = basketBox.getAttribute('data-visible')
     if(visability === 'false'){
@@ -605,51 +502,12 @@ searchBarInput.addEventListener("input", (e)=>{
 
         navBackDrop.addEventListener("click", (e) => {
             if(e.target.classList.contains('nav-backdrop')){
-                // console.log("Siemka");
                 navBackDrop.classList.remove('h-full');
                 basketBox.setAttribute('data-visible', false);
                 shopIconBtn.setAttribute('aria-expanded', false);
                 basketBox.style.display = "none";
-
                 document.body.style.overflow = "scroll";
-                // dropNaviItem.classList.remove('drop-navi-items-open');
             }
-        } )
-
-        
+        } )       
     }
-    // else{
-    //     basketBox.setAttribute('data-visible', false);
-    //     shopIconBtn.setAttribute('aria-expanded', false);
-    //     basketBox.style.display = "none";
-    // }
-
-  })
-
-
-//   let shopingBasket = localStorage.getItem('Basket')
-
-// if(basketTotal==0){
-//     localStorage.setItem('Basket', 'null');
-//     // addToBasket(e);
-//     // displaycart()
-// }else{
-//     localStorage.setItem('Basket', 'enabled');
-//     displaycart()
-//     // addToBasket(e);
-// }
-
-
-
-// const shopBasket = JSON.parce(localStorage.getItem('Basket') || "[]");
-
-// if(basket.length==0){
-//     localStorage.setItem('Basket', 'null');
-// }else{
-//     localStorage.setItem('Basket', 'enabled');
-// }
-
-
-
-
-// localStorage.setItem('Basket', 'null')
+  });
