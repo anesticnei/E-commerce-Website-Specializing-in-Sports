@@ -16,14 +16,11 @@ const shopIcon = document.querySelector('.shop-item-link');
 const menuIcon = document.querySelectorAll('.hamburger-icon span');
 const logoText = document.querySelector('.logo');
 let textColor = document.querySelectorAll('.color-text-dark');
-// const colorText = document.querySelector('.color-text-white')
-
 const instaIcon = document.querySelector('.insta')
 const fbIcon = document.querySelector('.fb')
 const tiktokIcon = document.querySelector('.tiktok')
 const twittIcon = document.querySelector('.twitt')
 const ytbIcon = document.querySelector('.ytb')
-
 const helpIcon = document.querySelector('.help');
 const infoIcon = document.querySelector('.info');
 const shippingIcon = document.querySelector('.shipping');
@@ -32,19 +29,11 @@ const returnIcon = document.querySelector('.return');
 const aboutIcon = document.querySelector('.about');
 const ourshopIcon = document.querySelector('.ourshop');
 const signinIcon = document.querySelector('.signin');
-
-
-
-
-
-
-
-
-
 const productsToggle = document.querySelector('.products-toggle');
 const bgToggle = document.querySelector('.bg-button-toggle');
 const infoLinks = document.querySelectorAll('.info-links');
 const btnToggle = document.querySelectorAll('.button-toggle');
+
 const enableDarkMode = () => {
     document.body.classList.add('darkmode');
     darkModeIcon.classList.add('darkmode-icon-toggle');
@@ -94,6 +83,7 @@ const enableDarkMode = () => {
         bTgl.style.color = "var(--primary-color-darkmode)"
     }
 }
+
 const disableDarkMode = () => {
     document.body.classList.remove('darkmode');
     darkModeIcon.classList.remove('darkmode-icon-toggle');
