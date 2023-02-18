@@ -16,9 +16,7 @@ searchBtn.addEventListener("click" , () => {
         logoNav.classList.add('non-opacity');
         exitSearch.classList.remove('non-opacity');
         naviWrapper.classList.add('w-full');
-
-    // }else if(visibility === 'true'){
-    
+        
     exitSearch.addEventListener("click", () =>{
         searchInput.setAttribute('data-visible', false);
         searchBtn.setAttribute('aria-expanded', false);
@@ -46,13 +44,7 @@ searchBtn.addEventListener("click" , () => {
         exitSearch.classList.add('non-opacity');
         naviWrapper.classList.remove('w-full');
         clearInput();
-        // renderProducts(currentProducts.filter((product) => product.category === "Women"))
     })
-
-
-
-
-
 
 
 function clearInput(){
