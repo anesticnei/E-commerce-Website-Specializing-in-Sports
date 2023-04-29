@@ -7,3 +7,4 @@ The website included features such as a product search bar, categorized product 
 Additionally, the website supported a dark mode theme that could be toggled on or off by the user, with the theme preference also saved in the browser's local storage.
 
 My main focus during the development of this project was on mobile devices, ensuring that the website was optimized for smaller screens and touch input.
+ 
